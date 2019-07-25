@@ -1,0 +1,18 @@
+﻿@model HomeModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<table>
+    <tr>
+        <th>Value 1</th>
+        <th>Value 2</th>
+    </tr>
+    @foreach(var row in Model.Rows)
+    {
+        <tr>
+            <td>@row.Value1</td>
+            <td>@row.Value2</td>
+        </tr>
+    }    
+</table>
